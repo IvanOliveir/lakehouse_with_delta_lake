@@ -3,7 +3,7 @@ resource "aws_s3_bucket_object" "etl_script_spark" {
   bucket = "${aws_s3_bucket.lakehouse.id}"
   key    = "emr-code/pyspark/glue_job_read_write.py"
   source = "../etl/glue_job_read_write.py"
-  etag = filemd5("../etl/glue_job_read_write.py")
+  #etag = filemd5("../etl/glue_job_read_write.py")
 }
 
 resource "aws_s3_bucket_object" "delta_insert" {
