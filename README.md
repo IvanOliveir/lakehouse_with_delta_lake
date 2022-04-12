@@ -1,1 +1,1 @@
-#AWS Lakehouse with DeltaLake 
+#AWS Lakehouse with Delta Lake 
