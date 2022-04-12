@@ -9,7 +9,7 @@ logging.basicConfig(stream=sys.stdout)
 logger = logging.getLogger('datalake_enem_small_upsert')
 logger.setLevel(logging.DEBUG)
 
-# Definicao da Spark Session
+# Definicao da Spark Session com imports deltalake
 spark = (SparkSession.builder.appName("DeltaExercise")
     .config("spark.jars.packages", "io.delta:delta-core_2.12:1.0.0")
     .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
