@@ -1,8 +1,8 @@
 
 resource "aws_s3_bucket_object" "etl_script_spark" {
   bucket = "${aws_s3_bucket.lakehouse.id}"
-  key    = "emr-code/pyspark/glue_job_read_write.py"
-  source = "../etl/glue_job_read_write.py"
+  key    = "emr-code/pyspark/lambda_function.py"
+  source = "../etl/lambda_function.py"
   #etag = filemd5("../etl/glue_job_read_write.py")
 }
 
