@@ -8,7 +8,7 @@ variable "lambda_function_name" {
 }
 
 variable "key_pair_name" {
-  default = 'ivan-test'
+  default = "ivan-test"
 }
 
 variable "airflow_subnet_id" {
