@@ -29,8 +29,8 @@ resource "aws_instance" "airflow" {
 }
 
 # Security group to allow acces to instance
-resource "aws_security_group" "airflow_sg1" {
-  name        = "airflow_sg"
+resource "aws_security_group" "airflow_sg" {
+  name        = "airflow_sg1"
   description = "Allow traffic on port 8080 for airflow"
   vpc_id      = var.vpc_id
 
