@@ -22,14 +22,14 @@ resource "aws_instance" "airflow" {
   instance_type               = "t3.micro"
   key_name                    = var.key_pair_name
   associate_public_ip_address = true
-  security_groups             = [aws_security_group.airflow_sg.id]
+  security_groups             = [aws_security_group.airflow_sg1.id]
   subnet_id                   = var.airflow_subnet_id
 
 
 }
 
 # Security group to allow acces to instance
-resource "aws_security_group" "airflow_sg" {
+resource "aws_security_group" "airflow_sg1" {
   name        = "airflow_sg"
   description = "Allow traffic on port 8080 for airflow"
   vpc_id      = var.vpc_id

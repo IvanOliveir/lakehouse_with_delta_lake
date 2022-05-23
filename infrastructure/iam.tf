@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda" {
-  name = "LambdaRoleIvanTest"
+  name = "LambdaRoleIvanTest2"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -18,7 +18,7 @@ EOF
 }
 
 resource "aws_iam_policy" "lambda" {
-  name        = "IvanTestLambdaBasicExecutionRolePolicy"
+  name        = "IvanTest1LambdaBasicExecutionRolePolicy"
   path        = "/"
   description = "Provides write permissions to CloudWatch Logs, S3 buckets and EMR Steps"
 
