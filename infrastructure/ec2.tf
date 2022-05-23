@@ -22,7 +22,7 @@ resource "aws_instance" "airflow" {
   instance_type               = "t3.micro"
   key_name                    = var.key_pair_name
   associate_public_ip_address = true
-  security_groups             = [aws_security_group.airflow_sg1.id]
+  security_groups             = [aws_security_group.airflow_sg.id]
   subnet_id                   = var.airflow_subnet_id
 
 
